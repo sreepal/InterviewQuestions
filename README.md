@@ -39,3 +39,21 @@ Your program should be capable of executing commands similar to this:
 Your program should also handle error cases. Here are some examples:
  1. Creating a file in a non-existent folder
  2. Appending text to a non-existent file
+
+## 5 - SHA-1 Encryptor
+A common security feature of communication protocols is a challenge-response mechanism to ensure each endpoint is authentic. Your task is to write a simple iOS test application to validate the response from such a challenge to assist in the development of the communication protocol.
+
+* The simplified protocol defines a 4-byte device challenge code (DCC) and a 10-byte shared secret key (SSK).
+* The response is defined as the SHA-1 hash of the DCC + SSK, where + represents concatenation.
+* The SSK shall be defined as 0x00112233445566778899.
+
+Example:
+```
+DCC = <b363f46a>
+DCC + SSK = <b363f46a 00112233 44556677 8899>
+SHA1(DCC + SSK) = <371b28a1 b32ecd1a 532822a5 91eac382 3bf80ea5>
+```
+
+Your test application should include a text field where the tester can enter a 4-byte hex string as input and then press a button to see the expected response in hex.
+
+For the SHA-1 calculation, please use the CC_SHA1() function from the iOS Security.framework.
