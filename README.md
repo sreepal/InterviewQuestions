@@ -1,15 +1,11 @@
 # InterviewQuestion
-=================
 Hello!  Welcome to the Comcast Silicon Valley Test Engineering interview question repo.  Your task is to pick whichever of the interview questions below suits your interest and code up a working solution within 24hrs.  Your instructions are as follows
-
 # Instructions
-=================
 1. Create a new repo under your personal org in github with the name / number of the question you choose to implement in the name of the org
 2. Implement the solution in whatever language you want (we prefer Java but if you are more comfortable in another language please feel free)
 3. Submit the URL of the repo to your comcast recruiters for review by our team
  
 # Questions
-=================
 ## 1 - Stock Trader app
 Create a stock trader application which buys and sells fixed amounts of stock at random intervals from a fictitious REST-ful endpoint (please define the endpoint as you see fit in order to make your application work - bonus points for using RAML)
 ## 2 - Meme sorter and scorer
