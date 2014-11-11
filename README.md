@@ -12,8 +12,8 @@ Create a stock trader application which buys and sells fixed amounts of stock at
 Read in a list of internet memes from a json file on the classpath (you choose the memes!).  Create one method which takes the list of memes and sorts them by name.  Create a second method which associates a "lulz" score (from 1-10) with each meme and writes the updated values to the same json file. 
 ## 3 - Taxperson
 Calculate the total cost of an item including tax based on whether it is considered a necessary or luxury item. The tax rate for basic necessities is 1%, the tax rate for luxury items is 9%. For simplicity of implementation, all transactions are measured in cents (pennies).
-## 4 - Better File System
-Create a program that will mimic a file system.Your file system should be capable of performing the following tasks:
+## 4 - In-Memory File System
+Create a program that will mimic a file system in a non-persistent way (when program is restarted, your file system is empty).. Your file system should be capable of performing the following tasks:
  1. Create a new folder - Takes a parameter of absolute folder path
  2. Create a new file - Take a parameter of absolute file path
  3. Add content to a file - Take 2 parameters: Content to append to a file; Absolute path to a file
@@ -39,6 +39,7 @@ Your program should be capable of executing commands similar to this:
 Your program should also handle error cases. Here are some examples:
  1. Creating a file in a non-existent folder
  2. Appending text to a non-existent file
+
 
 ## 5 - SHA-1 Encryptor
 A common security feature of communication protocols is a challenge-response mechanism to ensure each endpoint is authentic. Your task is to write a simple iOS test application to validate the response from such a challenge to assist in the development of the communication protocol.
