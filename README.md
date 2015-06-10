@@ -2,7 +2,7 @@
 Hello!  Welcome to the Comcast Silicon Valley Test Engineering interview question repo.  Your task is to pick whichever of the interview questions below suits your interest and code up a working solution within 24hrs.  Your instructions are as follows
 # Instructions
 1. Create a new repo under your personal org in github with the name / number of the question you choose to implement in the name of the org
-2. Implement the solution in whatever language you want (we prefer Java but if you are more comfortable in another language please feel free)
+2. Implement the solution in whatever language you want (we prefer Java but if you are more comfortable in another language please feel free). Your code should be unit tested.
 3. Submit the URL of the repo to your comcast recruiters for review by our team
  
 # Questions
@@ -13,7 +13,7 @@ Read in a list of internet memes from a json file on the classpath (you choose t
 ## 3 - Taxperson
 Calculate the total cost of an item including tax based on whether it is considered a necessary or luxury item. The tax rate for basic necessities is 1%, the tax rate for luxury items is 9%. For simplicity of implementation, all transactions are measured in cents (pennies).
 ## 4 - In-Memory File System
-Create a program that will mimic a file system in a non-persistent way (when program is restarted, your file system is empty).. Your file system should be capable of performing the following tasks:
+Create a progrm that will mimic a file system in a non-persistent way. Your program should not write anything to the HDDs and when it is restarted, the "file system" should be empty. Your program should handle the following file system commands:
  1. Create a new folder - Takes a parameter of absolute folder path
  2. Create a new file - Take a parameter of absolute file path
  3. Add content to a file - Take 2 parameters: Content to append to a file; Absolute path to a file
@@ -22,23 +22,26 @@ Create a program that will mimic a file system in a non-persistent way (when pro
  6. List folder contents - Takes absolute path to a folder as an input; Prints out folder contents as an output
  7. Search for a file by name - Takes name of a file to find; Prints out list of absolute paths to files with matching names
  8. Search for a file by name - Takes 2 parameters: Absolute path to a starting folder and file name; Outputs list of absolute paths to files with matching names
- 9. (Optional) Copy folders - Takes 2 parameters: Absolute path to source folder, Absolute path to destination folder
- 
-Your program should be capable of executing commands similar to this:
- 1. mkdir /someName
+ 9. (Bonus) Copy folders - Takes 2 parameters: Absolute path to source folder, Absolute path to destination folder
+
+Your program should be capable of running the following commands:
+ 1. mkdir /someFolder
  2. create /file1
- 3. create /someName/file1
+ 3. create /someFolder/file1
  4. write "Some text" /file1
  5. cat /file1
- 6. cp /file1 /someName/file2
+ 6. cp /file1 /someFolder/file2
  7. find file2 (Should return all found locations for file2)
- 8. find /someName file2
- 9. ls /someName
- 10. cp /someName /copyFolder
- 
+ 8. find /someFolder file2
+ 9. ls /someFolder
+ 10. (Bonus) cp /someFolder /copyFolder
+
 Your program should also handle error cases. Here are some examples:
  1. Creating a file in a non-existent folder
  2. Appending text to a non-existent file
+ 3. Listing contents of a non-existent folder
+ 4. Displaying contents of a non-existent file
+
 
 
 ## 5 - SHA-1 Encryptor
