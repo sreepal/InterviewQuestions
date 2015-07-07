@@ -3,7 +3,7 @@ Hello!  Welcome to the Comcast Silicon Valley Test Engineering interview questio
 # Instructions
 1. Create a new repo under your personal org in github with the name / number of the question you choose to implement in the name of the org
 2. Implement the solution in whatever language you want (we prefer Java but if you are more comfortable in another language please feel free). Your code should be unit tested.
-3. Submit the URL of the repo to your comcast recruiters for review by our team
+3. Submit the URL of the repo to your comcast recruiters for review by our team. IMPORTANT - Please be sure not to open a pull request for your solution.
  
 # Questions
 ## 1 - Stock Trader app
